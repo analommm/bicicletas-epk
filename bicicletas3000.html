@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Bicicletas3000 | Electronic Press Kit</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+    --bg:#050505;
+    --text:#f5f5f5;
+    --muted:#9a9a9a;
+    --accent:#7cffc4;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Space Grotesk', sans-serif;
+    background:var(--bg);
+    color:var(--text);
+    line-height:1.6;
+}
+
+section{
+    padding:100px 10%;
+}
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    background:
+        linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.6)),
+        url('hero.jpg') center center / cover;
+}
+
+.hero-content h1{
+    font-size:clamp(3rem,10vw,8rem);
+    line-height:1;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    color:var(--muted);
+    font-size:1.1rem;
+    letter-spacing:2px;
+    text-transform:uppercase;
+}
+
+.hero-content .tagline{
+    margin-top:25px;
+    color:var(--accent);
+    font-weight:700;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+}
+
+h2{
+    font-size:2rem;
+    margin-bottom:40px;
+    text-transform:uppercase;
+}
+
+.bio{
+    max-width:850px;
+    font-size:1.1rem;
+}
+
+.music-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+    gap:30px;
+}
+
+.embed{
+    width:100%;
+    min-height:380px;
+}
+
+.stats{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    border:1px solid #222;
+    padding:25px;
+}
+
+.card h3{
+    margin-bottom:10px;
+}
+
+.timeline{
+    border-left:1px solid #333;
+    padding-left:30px;
+}
+
+.timeline-item{
+    margin-bottom:40px;
+}
+
+.quote{
+    border-left:4px solid var(--accent);
+    padding-left:20px;
+    margin-bottom:25px;
+    color:#ddd;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
+}
+
+.gallery img{
+    width:100%;
+    display:block;
+}
+
+.downloads{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+.btn{
+    border:1px solid var(--accent);
+    color:var(--accent);
+    padding:14px 22px;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:var(--accent);
+    color:#000;
+}
+
+.contact{
+    text-align:center;
+}
+
+.contact a{
+    color:var(--accent);
+    text-decoration:none;
+}
+
+footer{
+    text-align:center;
+    padding:40px;
+    color:var(--muted);
+    border-top:1px solid #111;
+}
+
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <h1>BICICLETAS3000</h1>
+
+        <p>Buenos Aires · Argentina</p>
+
+        <p class="tagline">
+            MANTRAS ANTIDISTÓPICOS PARA EL TERCER OJO
+        </p>
+
+    </div>
+
+</section>
+
+<!-- BIO -->
+
+<section>
+
+    <div class="container">
+
+        <h2>Bio</h2>
+
+        <div class="bio">
+
+            <p>
+                Bicicletas3000 es la evolución de una de las bandas
+                pioneras del indie argentino del siglo XXI.
+                Su propuesta combina psicodelia, electrónica,
+                cultura rave, rock alternativo y paisajes sonoros
+                de carácter cinematográfico.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- MUSICA -->
+
+<section>
+
+    <div class="container">
+
+        <h2>Escuchar</h2>
+
+        <div class="music-grid">
+
+            <!-- Spotify -->
+            <iframe
+                class="embed"
+                src="https://open.spotify.com/embed/album/3agSrRUCSWjflcJ0JllnLn"
+                frameborder="0"
+                allowfullscreen=""
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+            </iframe>
+
+            <!-- Youtube -->
+            <iframe
+                class="embed"
+                src="https://www.youtube.com/embed/HVzj1KcsL2U"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- DATOS -->
+
+<section>
+
+    <div class="container">
+
+        <h2>Highlights</h2>
+
+        <div class="stats">
+
+            <div class="card">
+                <h3>+20 años</h3>
+                <p>de trayectoria artística.</p>
+            </div>
+
+            <div class="card">
+                <h3>Festivales</h3>
+                <p>Creamfields, Personal Fest, Pepsi Music.</p>
+            </div>
+
+            <div class="card">
+                <h3>Shows</h3>
+                <p>Aperturas para artistas internacionales.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- HISTORIA -->
+
+<section>
+
+    <div class="container">
+
+        <h2>Historia</h2>
+
+        <div class="timeline">
+
+            <div class="timeline-item">
+                <strong>2001</strong>
+                <p>Formación de la banda.</p>
+            </div>
+
+            <div class="timeline-item">
+                <strong>2020</strong>
+                <p>Transformación a Bicicletas3000.</p>
+            </div>
+
+            <div class="timeline-item">
+                <strong>2024</strong>
+                <p>Está Saliendo El Sol.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- PRENSA -->
+
+<section>
+
+    <div class="container">
+
+        <h2>Prensa</h2>
+
+        <div class="quote">
+            “Una de las bandas pioneras del indie argentino.”
+        </div>
+
+        <div class="quote">
+            “Una propuesta que une psicodelia, electrónica y rock.”
+        </div>
+
+    </div>
+
+</section>
+
+<!-- GALERIA -->
+
+<section>
+
+    <div class="container">
+
+        <h2>Fotos</h2>
+
+        <div class="gallery">
+
+            <img src="foto1.jpg" alt="">
+            <img src="foto2.jpg" alt="">
+            <img src="foto3.jpg" alt="">
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- DESCARGAS -->
+
+<section>
+
+    <div class="container">
+
+        <h2>Descargas</h2>
+
+        <div class="downloads">
+
+            <a href="#" class="btn">Press Photos</a>
+            <a href="#" class="btn">Logo Pack</a>
+            <a href="#" class="btn">Tech Rider</a>
+            <a href="#" class="btn">Stage Plot</a>
+            <a href="#" class="btn">PDF EPK</a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- CONTACTO -->
+
+<section>
+
+    <div class="container contact">
+
+        <h2>Contacto</h2>
+
+        <p>
+            Booking:
+            <a href="mailto:booking@bicicletas3000.com">
+                booking@bicicletas3000.com
+            </a>
+        </p>
+
+        <br>
+
+        <p>
+            Instagram · Spotify · YouTube
+        </p>
+
+    </div>
+
+</section>
+
+<footer>
+    Bicicletas3000 Electronic Press Kit
+</footer>
+
+</body>
+</html>
