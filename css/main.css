@@ -138,43 +138,17 @@ h2{
     color:#ddd;
 }
 
-.gallery{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:20px;
+.photo-stack{
+    display:flex;
+    flex-direction:column;
+    gap:40px;
 }
 
-.gallery img{
-width:100%;
-aspect-ratio:1/1;
-object-fit:cover;
-cursor:pointer;
-transition:.3s;
-}
-
-.gallery img:hover{
-transform:scale(1.02);
-}
-
-.lightbox{
-position:fixed;
-inset:0;
-background:rgba(0,0,0,.95);
-display:none;
-justify-content:center;
-align-items:center;
-z-index:9999;
-padding:20px;
-}
-
-.lightbox img{
-max-width:90vw;
-max-height:90vh;
-object-fit:contain;
-}
-
-.lightbox.active{
-display:flex;
+.photo-stack img{
+    width:100%;
+    height:auto;
+    display:block;
+    border-radius:12px;
 }
 
 .downloads{
