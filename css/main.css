@@ -119,6 +119,19 @@ h2{
     min-height:380px;
 }
 
+.spotify-grid{
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
+    gap:20px;
+    margin-bottom:30px;
+}
+
+.spotify-embed{
+    width:100%;
+    height:352px;
+    border:none;
+}
+
 .stats{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
@@ -211,3 +224,9 @@ footer{
     border-top:1px solid #111;
 }
 
+@media (max-width:768px){
+
+    .spotify-grid{
+        grid-template-columns:1fr;
+    }
+}
