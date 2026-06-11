@@ -81,6 +81,16 @@ section{
     color:#f5f5f5;
 }
 
+.logo-title{
+    margin-bottom:20px;
+}
+
+.logo-title img{
+    max-width:800px;
+    width:100%;
+    height:auto;
+}
+
 .tagline{
     color:#7cffc4 !important;
     font-weight:700;
